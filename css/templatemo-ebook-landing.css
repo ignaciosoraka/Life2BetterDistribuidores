@@ -1110,7 +1110,7 @@ footer{
   height: auto;
   width: 100%;
   
-  padding-top: 40px;
+  padding-top: 10px;
   color: #000000;
   
 }
@@ -1138,7 +1138,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  
+ 
   margin: 20px;
   margin-left: -20px;
 }
