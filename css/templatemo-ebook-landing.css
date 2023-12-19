@@ -40,7 +40,9 @@
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family);
+ 
 }
+
 
 
 /*---------------------------------------
@@ -267,7 +269,7 @@ strong {
     transform: translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateY(-10px) rotateY(180deg); /* Rotación sobre el eje Y */
+    transform: translateY(-10px) rotateY(0deg); /* Rotación sobre el eje Y */
   }
 }
 
@@ -300,6 +302,24 @@ strong {
 /*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
+
+
+
+.custom-btn2 {
+  background:#0875ac;
+  color: var(--white-color);
+  border-radius: var(--border-radius-large);
+  border: 2px solid transparent;
+}
+
+.custom-btn2:hover {
+  background:#007BFF;
+  color: var(--white-color);
+}
+
+
+
+
 .custom-btn {
   background: #00bb2d;
   border: 2px solid transparent;
@@ -670,6 +690,59 @@ strong {
   }
 
 }
+
+
+/*---------------------------------------
+  HERO2 El GRACIAS        
+-----------------------------------------*/
+
+.hero2-section {
+  background-image: url('../images/Fibaro-Lighting.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.hero2-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.hero2-section .row {
+  position: relative;
+  z-index: 22;
+  top: 100px;
+  padding-bottom: 50px;
+
+}
+
+.hero2-image {
+  position: relative;
+  z-index: 2;
+  bottom: 100px;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 991px) {
+  .hero2-section {
+    height: calc(90vh - 88px);
+    padding-top: 10px;
+
+  }
+
+}
+
+
+
 
 
 /*---------------------------------------

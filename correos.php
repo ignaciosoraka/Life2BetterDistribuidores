@@ -16,7 +16,7 @@ $mensajeCompleto .= "Mensaje: " . $mensaje . "\n";
 
 $asuntoCorreo = "Consulta de " . $nombre;
 
-$header = "From: AITUE " . $email . ">\r\n";
+$header = "From: Life2BetterDistribuidores " . $email . ">\r\n";
 $header .= "Reply-To: " . $email . "\r\n";
 $header .= "MIME-Version: 1.0\r\n";
 $header .= "Content-Type: text/plain; charset=UTF-8\r\n";
