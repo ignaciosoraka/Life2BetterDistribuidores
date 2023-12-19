@@ -1,11 +1,16 @@
 <?php
 $destinatario = 'ignaciosoraka@gmail.com';
 
-$nombre = $_POST['nombre'];
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+
+// Validar la dirección de correo electrónico
+$email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+if (!$email) {
+    echo "La dirección de correo electrónico no es válida.";
+    exit();
+}
+
 $asunto = $_POST['asunto'];
 $mensaje = $_POST['mensaje'];
-
 
 $mensajeCompleto = "Mensaje de contacto:\n\n";
 $mensajeCompleto .= "Nombre: " . $nombre . "\n";
