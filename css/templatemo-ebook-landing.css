@@ -779,8 +779,22 @@ strong {
 /*---------------------------------------
   FEATURED              
 -----------------------------------------*/
+
+@keyframes gradient-e60a44dc {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
 .featured-section {
-  background-color: var(--custom-btn-bg-color);
+  background: linear-gradient(-45deg,#4590c9,#166b95,#3ebcfa,#166b95);
+  background-size: 400% 400%;
+  animation: gradient-e60a44dc 15s ease-in-out infinite;
   position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -810,6 +824,9 @@ strong {
 /*---------------------------------------
   CUSTOM BLOCK              
 -----------------------------------------*/
+/*---------------------------------------
+  CUSTOM BLOCK              
+-----------------------------------------*/
 .custom-block {
   background-image: url('');
   background-repeat: no-repeat;
@@ -821,7 +838,8 @@ strong {
   background-color: rgba(0, 0, 0, 0.953);
   min-width: 100%;
   min-height: 100%;
-
+  max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
+  margin: 0 auto; /* Centra el bloque */
 }
 
 .custom-block::after {
@@ -832,21 +850,15 @@ strong {
   bottom: 0;
   left: 0;
   pointer-events: none;
-  background-color: #3ebcfa;
+  background: linear-gradient(-45deg,#4590c9,#166b95,#3ebcfa,#166b95);
+  background-size: 400% 400%;
+  animation: gradient-e60a44dc 15s ease-in-out infinite;
 }
 
 .custom-block .avatar-image {
-  min-width: 60px;
+  min-width: 40px; /* Ajusta el ancho mínimo según tus preferencias */
   margin: auto;
   left: 0;
-}
-
-.custom-block .bi-star {
-  color: var(--white-color);
-}
-
-.custom-block .bi-star-fill {
-  color: var(--secondary-color);
 }
 
 .custom-block-image-wrap {
@@ -856,14 +868,13 @@ strong {
   z-index: 2;
   overflow: hidden;
   margin: 0 auto;
-  padding: 25px 35px;
-
+  padding: 15px 20px; /* Ajusta el padding según tus preferencias */
 }
 
 .custom-block-info {
   position: relative;
   z-index: 2;
-  padding: 30px;
+  padding: 15px; /* Ajusta el padding según tus preferencias */
 }
 
 .custom-block-info strong,
@@ -873,7 +884,8 @@ strong {
 
 .custom-block-info p {
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.8;
+  line-height: 1.5;
+  text-align: center;
 }
 
 
@@ -884,6 +896,16 @@ strong {
   padding-top: 40px;
   padding-right: 40px;
   padding-left: 40px;
+}
+
+.product-container {
+  height: 400px; /* ajusta la altura según tus necesidades */
+  overflow-y: auto;
+}
+
+.product-link.active {
+  color: #00f;
+  font-weight: bold;
 }
 
 .nav-pills {
