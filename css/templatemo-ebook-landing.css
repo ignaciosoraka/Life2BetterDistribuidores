@@ -684,7 +684,7 @@ strong {
 
 @media screen and (min-width: 991px) {
   .hero-section {
-    height: calc(90vh - 88px);
+    height: calc(80vh - 5px);
     padding-top: 10px;
 
   }

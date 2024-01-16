@@ -8649,7 +8649,7 @@ fieldset:disabled .btn {
 }
 
 .me-3 {
-    margin-right: 1rem !important
+    margin-right: 0.3rem !important
 }
 
 .me-4 {
@@ -10998,7 +10998,7 @@ fieldset:disabled .btn {
     }
 
     .mb-lg-0 {
-        margin-bottom: 0 !important
+     
     }
 
     .mb-lg-1 {
@@ -11131,11 +11131,11 @@ fieldset:disabled .btn {
         padding-top: 1.5rem !important;
         padding-bottom: 1.5rem !important
     }
-
+/*
     .py-lg-5 {
         padding-top: 3rem !important;
         padding-bottom: 3rem !important
-    }
+    }*/
 
     .pt-lg-0 {
         padding-top: 0 !important
@@ -11186,7 +11186,7 @@ fieldset:disabled .btn {
     }
 
     .pb-lg-0 {
-        padding-bottom: 0 !important
+        
     }
 
     .pb-lg-1 {
